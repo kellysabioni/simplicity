@@ -47,6 +47,7 @@ h1{
     position: sticky;
     top: 0;
     background-color: var(--cor-clara);
+    z-index: 10;
  
     /* Regras específicas para classe limitador que está dentro do topo: além das configurações gerais , aqui também tem altura e ajustes do flex */
     
@@ -281,3 +282,22 @@ table {
         background: lightgray;
     }
 }
+
+
+.galeria{
+    text-align: center;
+
+    img{
+        border-radius: 150px;
+        transform: scale(.85) rotate(-14deg);
+        box-shadow: var(--cor-escura) 1px 1px 20px 3px;
+        transition: .5s; 
+    
+        &:hover{
+            transform: scale(1) rotate(0);
+            box-shadow: 0 0 0;
+        }
+    }
+    
+}
+
